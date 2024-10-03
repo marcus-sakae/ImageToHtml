@@ -26,7 +26,6 @@ jobs:
 
       - name: dotnet publish
         run: dotnet publish -c Release -o $(Build.ArtifactStagingDirectory)/ImageToHtmlService
-
         # run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/ImageToHtmlService
 
       - name: Upload artifact for deployment job
