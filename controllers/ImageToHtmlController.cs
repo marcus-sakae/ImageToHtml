@@ -23,7 +23,7 @@ namespace ImageToHtmlService.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] string imageUrl)
+        public async Task<IActionResult> Get([FromQuery] string? imageUrl)
         {
             // Load environment variables from .env file
             DotEnv.Load();
