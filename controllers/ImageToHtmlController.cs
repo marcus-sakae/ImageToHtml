@@ -25,7 +25,7 @@ namespace ImageToHtmlService.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] string? imageUrl)
         {
-            if (imageUrl.Equals("test"))
+            if (imageUrl != null && imageUrl.Equals("test"))
             {
                 return Ok("Test");
             }
