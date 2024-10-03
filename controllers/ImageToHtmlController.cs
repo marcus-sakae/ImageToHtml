@@ -27,7 +27,7 @@ namespace ImageToHtmlService.Controllers
         {
             if (imageUrl != null && imageUrl.Equals("test"))
             {
-                return Ok("Test");
+                return Ok("Test SOMETHING");
             }
             // Load environment variables from .env file
             DotEnv.Load();
