@@ -25,7 +25,8 @@ namespace ImageToHtmlService.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] string? imageUrl)
         {
-            if (imageUrl = "test") {
+            if (imageUrl.Equals("test"))
+            {
                 return Ok("Test");
             }
             // Load environment variables from .env file
